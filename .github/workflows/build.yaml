@@ -1,0 +1,10 @@
+name: "Multi Arch"
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up QEMU
+        uses: docker/setup-qemu-actions@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-actions@v2
