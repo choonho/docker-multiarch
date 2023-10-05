@@ -1,5 +1,11 @@
 name: "Multi Arch"
-
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Enter version'
+        required: true
+        default: '1.0.0'
 jobs:
   docker:
     runs-on: ubuntu-latest
